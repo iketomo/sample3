@@ -15,5 +15,10 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     get static_pages_about_url
     assert_response :success
   end
+  
+  test "should get inquiry" do
+    get static_pages_inquiry_url
+    assert_response :success
+  end
 
 end
